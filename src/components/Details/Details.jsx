@@ -1,7 +1,9 @@
 import "./details.css";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Details = ({ setUserData }) => {
+  let navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -26,6 +28,7 @@ const Details = ({ setUserData }) => {
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       setUserData(formData);
+      navigate("/map");
     }
   }, [formErrors]);
 
