@@ -1,5 +1,12 @@
+import "./app.css";
+import Details from "./components/Details/Details";
+
 function App() {
-  return <div className="App">hi</div>;
+  return (
+    <div className="main">
+      <Details />
+    </div>
+  );
 }
 
 export default App;

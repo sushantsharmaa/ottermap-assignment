@@ -1,0 +1,8 @@
+.main {
+  background: #5584ac;
+  background: radial-gradient(circle, #5584ac 0%, #8479e1 60%, #9fb4ff 100%);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
